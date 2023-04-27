@@ -2,12 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Experiencia } from '../modelo/experiencia';
+import { environment } from '../environment/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SExperienciaService {
-  expURL = 'http://localhost:8080/explab/'
+  expURL :string =environment.ApiUrl + "explab";
   constructor(private httpClient:HttpClient) { }
 
   public lista():Observable<Experiencia[]>{

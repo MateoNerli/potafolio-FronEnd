@@ -3,12 +3,13 @@ import { identifierName } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Skill } from '../modelo/skill';
+import { environment } from '../environment/environment.prod';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'http://localhost:8080/skill/'
+  URL :string =environment.ApiUrl + "skill";
   
   constructor(private httpClient: HttpClient) { }
 
