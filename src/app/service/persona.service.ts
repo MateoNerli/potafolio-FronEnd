@@ -9,7 +9,7 @@ import { environment } from '../environment/environment.prod';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL:string =environment.ApiUrl + "personas";
+  URL:string =environment.ApiUrl + "personas/";
 
   constructor(private http: HttpClient) { }
 

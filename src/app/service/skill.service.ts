@@ -9,7 +9,7 @@ import { environment } from '../environment/environment.prod';
   providedIn: 'root'
 })
 export class SkillService {
-  URL :string =environment.ApiUrl + "skill";
+  URL :string =environment.ApiUrl + "skill/";
   
   constructor(private httpClient: HttpClient) { }
 

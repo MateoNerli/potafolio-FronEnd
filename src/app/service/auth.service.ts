@@ -10,7 +10,7 @@ import { environment } from '../environment/environment.prod';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL:string =environment.ApiUrl + "auth"
+  authURL:string =environment.ApiUrl + "auth/"
   constructor(private httpClient:HttpClient) { }
 
   public nuevo(nuevoUsuario:NuevoUsuario):Observable<any>{

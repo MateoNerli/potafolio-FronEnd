@@ -9,7 +9,7 @@ import { environment } from '../environment/environment.prod';
 })
 export class EducacionService {
 
-  URL:string = environment.ApiUrl + "educacion";
+  URL:string = environment.ApiUrl + "educacion/";
 
   constructor(private httpClient : HttpClient) { }
 

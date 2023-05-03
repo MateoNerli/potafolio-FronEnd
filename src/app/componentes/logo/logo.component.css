@@ -41,7 +41,7 @@ img {
 
 button {
   padding: 13px 30px;
-  font-size: 13px;
+  font-size: 12px;
   outline: none;
   border: none;
   border-radius: 10px;
@@ -79,6 +79,6 @@ button:hover {
 
 @media (max-width : 576px){
   .redes img{
-    
+    width: 15%;
   }
 }

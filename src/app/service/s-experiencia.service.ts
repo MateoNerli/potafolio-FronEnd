@@ -8,7 +8,7 @@ import { environment } from '../environment/environment.prod';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  expURL :string =environment.ApiUrl + "explab";
+  expURL :string =environment.ApiUrl + "explab/";
   constructor(private httpClient:HttpClient) { }
 
   public lista():Observable<Experiencia[]>{
