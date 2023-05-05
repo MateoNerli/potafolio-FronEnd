@@ -1,5 +1,4 @@
 export const environment = {
     prodution:true,
-    ApiUrl:"https://portfolio-backend-pi3k.onrender.com/",
-    idPersona:1
+    ApiUrl:'https://portfolio-backend-rqmd.onrender.com/'
 };
