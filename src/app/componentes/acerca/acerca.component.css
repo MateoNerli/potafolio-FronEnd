@@ -1,50 +1,74 @@
-.row {
-    padding: 20px;
+#sobremi {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 15px;
+  color: #111135;
+  display: flex;
 }
 
-div {
-    background-color: #e7b483;
-    text-align: center;
+#sobremi .contenedor-foto {
+  max-width: 400px;
+  margin-right: 80px;
 }
 
-.mia img {
-    transition: .5s ease;
+#sobremi .contenedor-foto img {
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f3f3f3;
 }
 
-.mia img:hover {
-    box-shadow: 0 0 0 10px #000000;
-    transition: .5s ease;
+#sobremi .sobremi {
+  margin: 0 40px;
 }
 
-@media (min-width : 600px){
-    #foto{
-        position: absolute;
-        width:100%;
-        border-radius: 25%;
-        margin-top: -50%;        
-    }
-    #texto{
-        font-weight: bold;
-        margin-top: 11%;
-        position: relative; 
-        left: -9%;
-    }
-    #info{
-        margin-top: 3%;
-    }
+#sobremi .sobremi .titulo-seccion {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
 }
-@media (max-width: 599px) {
-    #foto {
-        position: absolute;
-        width: 50%;
-        border-radius: 25%;
-        box-shadow: 3px 3px 3px gray;
-        left: 25%;
-        top: -55px;
-    }
 
-    #texto {
-        font-weight: bold;
-        margin-top: 50%;
-    }
+#sobremi .sobremi h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span {
+  color: rgb(8, 0, 255);
+}
+
+#sobremi .sobremi h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#sobremi .sobremi p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #565656;
+  margin-bottom: 12px;
+}
+
+#sobremi .sobremi a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border-radius: 30px;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+
+#sobremi .sobremi a:hover {
+  background-color: rgb(153, 255, 0);
+  color: black;
 }
