@@ -3,12 +3,12 @@ import { persona } from 'src/app/modelo/persona.modelo';
 import { PersonaService } from 'src/app/service/persona.service';
 
 @Component({
-  selector: 'sobreMi',
+  selector: 'SobreMi',
   templateUrl: './sobreMi.component.html',
   styleUrls: ['./sobreMi.component.css']
 })
 
-export class sobreMi implements OnInit {
+export class SobreMi implements OnInit {
 
   persona: persona = new persona("","","");
 

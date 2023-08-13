@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Navbar } from './componentes/nav/nav.component';
 import { Header } from './componentes/header/header.component';
-import { sobreMi } from './componentes/sobreMi/sobreMi.component';
+import { SobreMi } from './componentes/sobreMi/sobreMi.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
@@ -30,7 +30,7 @@ import { RouterModule } from '@angular/router';
     AppComponent,
     Header,
     Navbar,
-    sobreMi,
+    SobreMi,
     ExperienciaComponent,
     EducacionComponent,
     HardSoftSkillsComponent,
