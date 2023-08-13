@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './componentes/header/header.component';
-import { LogoComponent } from './componentes/logo/logo.component';
+//import { HeaderComponent } from './componentes/header/header.component';
+import { Navbar } from './componentes/nav/nav.component';
 import { BannerComponent } from './componentes/banner/banner.component';
 import { AcercaComponent } from './componentes/acerca/acerca.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
@@ -29,8 +29,8 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    LogoComponent,
+  // HeaderComponent,
+    Navbar,
     BannerComponent,
     AcercaComponent,
     ExperienciaComponent,

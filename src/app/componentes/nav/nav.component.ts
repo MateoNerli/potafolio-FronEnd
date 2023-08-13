@@ -3,16 +3,18 @@ import { Router } from '@angular/router';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
-  selector: 'app-logo',
-  templateUrl: './logo.component.html',
-  styleUrls: ['./logo.component.css']
+  selector: 'navbar',
+  templateUrl: './nav.component.html',
+  styleUrls: ['./nav.component.css']
 })
-export class LogoComponent implements OnInit  {
-  isLogged = false;
+export class Navbar implements OnInit  {
+  isMenuOpen: boolean = false;
+  isLogged: boolean = false;
 
   constructor(private router:Router,private tokenService:TokenService ){}
 
   ngOnInit(): void{
+   
     if(this.tokenService.getToken()){
       this.isLogged=true;
     }else{
@@ -28,4 +30,9 @@ export class LogoComponent implements OnInit  {
   login(){
     this.router.navigate(['login'])
   }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+  
 }
