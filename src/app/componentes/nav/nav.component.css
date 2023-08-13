@@ -1,14 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
 }
 .container {
-  max-width: 1068px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1100px;
 }
 
 nav {
@@ -16,20 +13,20 @@ nav {
   z-index: 9999;
 }
 nav {
-  font-family: "Agdasima", sans-serif;
+  font-family: "Quicksand", sans-serif;
   display: block;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: rgb(49, 48, 48);
+  background-color: #939090;
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 35px;
+  padding: 10px 35px;
 }
 
 #menu-icon {
@@ -38,22 +35,28 @@ nav {
   color: white;
   display: none;
 }
-
 .logo {
-  font-family: "Agdasima", sans-serif;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: whitesmoke;
   font-size: 1.2rem;
   font-weight: 700;
-  color: whitesmoke;
 }
+
+.logo-img {
+  height: auto;
+  max-width: 100px;
+  margin-right: 10px;
+}
+
 .logo:hover {
   transform: scale(1.1);
   transition: all 0.3s ease 0s;
 }
-.logo span {
-  color: white;
-}
 
 .navbar {
+  margin: 0;
   display: flex;
   column-gap: 1rem;
   align-items: center;
@@ -62,88 +65,56 @@ nav {
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  text-transform: uppercase;
   font-weight: 500;
 }
 
 .navbar a:hover,
 .navbar .active {
   color: white;
-  border-bottom: 3px solid greenyellow;
-}
-
-.btn {
-  --arrow-width: 10px;
-  --arrow-stroke: 2px;
-  box-sizing: border-box;
-  border: 0;
-  border-radius: 20px;
-  color: white;
-  padding: 1em 1.8em;
-  background: black;
-  display: flex;
-  transition: 0.2s ease-in-out;
-  align-items: center;
-  gap: 0.6em;
-  font-weight: bold;
+  border-bottom: 3px solid #0800ff;
 }
 
 a button {
   text-decoration: none;
 }
 
-button .arrow-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-button .arrow {
-  margin-top: 1px;
-  width: var(--arrow-width);
-  background: var(--primary);
-  height: var(--arrow-stroke);
-  position: relative;
-  transition: 0.2s;
-}
-
-.btn .arrow::before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  border: solid greenyellow;
-  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
-  display: inline-block;
-  top: -3px;
-  right: 3px;
-  transition: 0.2s;
-  padding: 3px;
-  transform: rotate(-45deg);
-}
-
-.btn:hover {
-  background-color: greenyellow;
-  color: black;
-}
-
-.btn:hover .arrow {
+button {
   background: black;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
 }
 
-.btn:hover .arrow:before {
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(50, 173, 255);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: white;
+}
+
+button:hover::before {
+  left: 0;
   right: 0;
+  opacity: 1;
 }
 
-@media (max-width: 991px) {
-  .nav {
-    padding: 10px;
-  }
-}
 @media (max-width: 768px) {
-  .logo-img {
-    display: none;
-  }
-
   #menu-icon {
     display: initial;
   }
@@ -178,6 +149,9 @@ button .arrow {
 @media (max-width: 400px) {
   #menu-icon {
     font-size: 15px;
+  }
+  .nav {
+    padding: 10px 10px;
   }
   .btn {
     font-size: 12px;
