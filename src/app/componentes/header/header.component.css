@@ -9,52 +9,45 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  padding-bottom: 15px;
   color: #fff;
 }
 
-#header .img {
-  flex: 1;
-  max-width: 40%;
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#header .img img {
-  max-width: 100%;
-  height: 80%;
-  border-radius: 20%;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
-}
-
 #header .presentacion {
-  flex: 1;
-  max-width: 50%;
-  padding: 20px;
+  /* max-width: 1100px; */
+  height: 100vh;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#header .bienvenida {
-  font-size: 18px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-#header h2 {
-  font-size: 36px;
+#header .presentacion .bienvenida {
+  font-size: 26px;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
-#header h2 span {
-  color: greenyellow;
-}
-
-#header .descripcion {
-  font-size: 16px;
-  line-height: 1.6;
+#header .presentacion h2 {
+  font-size: 2em;
   margin-bottom: 25px;
+  text-align: center;
+}
+
+#header .presentacion h2 span {
+  font-size: 1.5em;
+  color: rgb(50, 173, 255);
+}
+
+#header .presentacion .descripcion {
+  max-width: 700px;
+  margin: 25px auto;
+  font-size: 18px;
+  text-align: center;
 }
 
 .redes {
@@ -79,7 +72,8 @@
 }
 
 .redes a:hover {
-  background: greenyellow;
+  background: rgb(0, 0, 255);
+  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -99,5 +93,6 @@
 
   #header .presentacion {
     order: 1;
+    padding: 10px;
   }
 }

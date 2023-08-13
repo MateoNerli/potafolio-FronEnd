@@ -6,8 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Navbar } from './componentes/nav/nav.component';
 import { Header } from './componentes/header/header.component';
-import { BannerComponent } from './componentes/banner/banner.component';
-import { AcercaComponent } from './componentes/acerca/acerca.component';
+import { sobreMi } from './componentes/sobreMi/sobreMi.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
@@ -29,10 +28,9 @@ import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
-   Header,
+    Header,
     Navbar,
-    BannerComponent,
-    AcercaComponent,
+    sobreMi,
     ExperienciaComponent,
     EducacionComponent,
     HardSoftSkillsComponent,
